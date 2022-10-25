@@ -1,0 +1,6 @@
+within DHN4Control.Components.Valves;
+
+model ValveLinear
+  extends DHN4Control.Components.Valves.BaseClass.PartialValve;
+equation
+end ValveLinear;
