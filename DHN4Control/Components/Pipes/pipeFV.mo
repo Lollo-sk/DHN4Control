@@ -10,7 +10,6 @@ model pipeFV
   parameter Modelica.Units.SI.PerUnit cf = 0.004 "Costant Fanning friction coefficient";
   parameter Modelica.Units.SI.Velocity u_nom = 1 "Nominal fluid velocity";
   parameter Integer N = 2 "Number of finite volumes";
-  parameter Boolean initMflow = false "Define initial mass flow";
   final parameter Modelica.Units.SI.PressureDifference dp_nom = cf / 2 * rho0 * omega * L / A * u_nom ^ 2 "Nominal pressure drop";
   final parameter Modelica.Units.SI.MassFlowRate m_flow_nom = rho0 * A * u_nom "Nominal mass flow rate";
   
@@ -25,8 +24,6 @@ model pipeFV
   Modelica.Units.SI.Power Q_ext[N] "Heat dissipation out of each wall cell to the ambient";
   Modelica.Blocks.Interfaces.RealVectorOutput section_T[N] annotation(
     Placement(visible = true, transformation(origin = {2, 62}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {0, 22}, extent = {{-20, -20}, {20, 20}}, rotation = 0))); 
-initial equation
-  m_flow = m_flow_nom;
 equation
 
   // Mass balance

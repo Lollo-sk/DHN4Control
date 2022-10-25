@@ -2,7 +2,7 @@ within DHN4Control.Components.Valves.BaseClass;
 
 partial model PartialValve
   extends DHN4Control.Interfaces.PartialTwoPort;
-  import SimpleDistricHeating.Media.rho0;
+  import DHN4Control.Media.{cp,rho0};
   import Modelica.Fluid.Utilities.regRoot;
   
   parameter Modelica.Units.SI.PerUnit nomOpening = 1 "Nominal valve opening";

@@ -20,8 +20,6 @@ model FixedReturnPowerLoad
     Placement(visible = true, transformation(origin = {-130, 24}, extent = {{-20, -20}, {20, 20}}, rotation = 0), iconTransformation(origin = {-80, 60}, extent = {{-20, -20}, {20, 20}}, rotation = 0)));
   Modelica.Blocks.Interfaces.RealInput loadConsumptionRef annotation(
     Placement(visible = true, transformation(origin = {-10, 38}, extent = {{-20, -20}, {20, 20}}, rotation = -90), iconTransformation(origin = {0, 80}, extent = {{-20, -20}, {20, 20}}, rotation = -90)));
-initial equation
-  outlet.h_out = (valveRef-0.2)*DHN4Control.Media.cp;
 
 equation
   connect(inlet, loadValve.inlet) annotation(
