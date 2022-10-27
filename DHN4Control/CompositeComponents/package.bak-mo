@@ -1,8 +1,0 @@
-within DHN4Control;
-
-package CompositeComponents "Package containing complex and common components of District heating networks"
-  extends Modelica.Icons.Package;
-  annotation(
-    Icon(graphics = {Rectangle(origin = {0, -4},fillColor = {171, 171, 171}, extent = {{-60, 88}, {60, -88}}), Ellipse(origin = {0, -38}, fillColor = {255, 255, 255}, fillPattern = FillPattern.Solid, extent = {{-40, 40}, {40, -40}}), Polygon(origin = {-1, -35}, lineColor = {152, 152, 152}, fillColor = {152, 152, 152}, fillPattern = FillPattern.Horizontal, points = {{-21, -37}, {-27, -3}, {-21, -13}, {-19, 25}, {-11, 13}, {1, 37}, {13, 13}, {19, 25}, {23, -15}, {27, -5}, {21, -37}, {1, -43}, {-21, -37}}), Polygon(origin = {-1, -35}, lineColor = {213, 213, 213}, fillColor = {213, 213, 213}, fillPattern = FillPattern.Solid, points = {{-15, -37}, {-23, -13}, {-15, -17}, {-15, 3}, {-9, -1}, {1, 25}, {9, -1}, {15, 3}, {17, -17}, {23, -13}, {15, -37}, {1, -43}, {-15, -37}})}));
-
-end CompositeComponents;
