@@ -3,7 +3,6 @@ within DHN4Control.Components.Machines;
 model CombinedHeatPower
   extends DHN4Control.Interfaces.PartialTwoPort;
   
-  parameter Real P_init=25e3 "Initial electrical power production";
   parameter Real eta_electrical = 0.4193 "Average electrical efficiency";
   parameter Real eta_thermal = 0.5453 "Average thermal efficiency";
   
