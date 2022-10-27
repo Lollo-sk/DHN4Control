@@ -2,7 +2,7 @@ within DHN4Control.Examples.Test;
 
 model CombinedHeatPowerTest
   extends Modelica.Icons.Example;
-  Modelica.Blocks.Sources.Constant temperature(k = 79) annotation(
+  Modelica.Blocks.Sources.Constant temperature(k = 70) annotation(
     Placement(visible = true, transformation(origin = {-130, 2}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Sources.IdealMassFlowSource idealMassFlowSource annotation(
     Placement(visible = true, transformation(origin = {-68, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -12,11 +12,11 @@ model CombinedHeatPowerTest
     Placement(visible = true, transformation(origin = {-46, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.Constant massflow(k = 1) annotation(
     Placement(visible = true, transformation(origin = {-102, 18}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Sources.Constant Tref(k = 4186 * 0.4 / 0.5) annotation(
+  Modelica.Blocks.Sources.Constant Tref(k = 10 *4186 * 0.4 / 0.5) annotation(
     Placement(visible = true, transformation(origin = {-40, 26}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Sensors.IdealTemperatureSensor warmStartTSensor annotation(
     Placement(visible = true, transformation(origin = {32, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Components.Machines.CombinedHeatPower combinedHeatPower(P_init = 0, eta_electrical = 0.4, eta_thermal = 0.5)  annotation(
+  Components.Machines.CombinedHeatPower combinedHeatPower(eta_electrical = 0.4, eta_thermal = 0.5)  annotation(
     Placement(visible = true, transformation(origin = {-12, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
 equation
   connect(massflow.y, idealMassFlowSource.M) annotation(
