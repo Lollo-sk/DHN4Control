@@ -44,7 +44,7 @@ equation
     end for;
   else
     for i in 1:N loop
-      rho0 * V/N * cp * der(Ttilde[i]) = m_flow * cp * (T[i] - T[i + 1]) - Q_int[i] "Energy balance water";
+      rho0 * V/N * cp * der(Ttilde[i]) = m_flow * cp * (T[i] - T[i + 1]) - Q_ext[i] "Energy balance water";
       Q_int[i] = 0;
       der(Twall[i]) = 0;
       // Heat exchange outwards
