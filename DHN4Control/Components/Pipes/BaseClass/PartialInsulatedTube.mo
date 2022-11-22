@@ -20,7 +20,6 @@ partial model PartialInsulatedTube
   parameter Modelica.Units.SI.Temperature T_start = 273.15 + 70 "Temperature start value";
   
   
-  
   // Compute final parameters
   final parameter Modelica.Units.SI.Area A = Modelica.Constants.pi * D ^ 2 / 4;
   final parameter Modelica.Units.SI.Length omega = Modelica.Constants.pi * D;

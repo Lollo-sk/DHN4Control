@@ -12,7 +12,7 @@ partial model PartialValve
   parameter Modelica.Units.SI.PressureDifference dp_nom = 4e5 "Pressure drop between supply and return, as imposed by the differential pump";
   parameter Components.Types.valveOpeningChar openingChar = Components.Types.valveOpeningChar.Linear "opening characteristic";
   
-  parameter Modelica.Units.SI.MassFlowRate m_nom = 5 "Peak mass flow rate at full opening";
+  final parameter Modelica.Units.SI.MassFlowRate m_nom = Kv * dp_nom * dp_nom *1  "Peak mass flow rate at full opening";
   
   Modelica.Units.SI.Area A_v = 2.7778e-5 * Kv "Opening area of the valve";
   Modelica.Units.SI.MassFlowRate m_flow "mass flow rate through the valve";

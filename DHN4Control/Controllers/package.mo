@@ -23,7 +23,7 @@ package Controllers "Package containing simple controls ready to be implemented"
           Placement(visible = true, transformation(origin = {24, 34}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
     Modelica.Blocks.Nonlinear.Limiter limiter(uMax = Umax, uMin = Umin)  annotation(
           Placement(visible = true, transformation(origin = {62, 34}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-    Modelica.Blocks.Continuous.FirstOrder firstOrder(T = Ti, initType = Modelica.Blocks.Types.Init.NoInit, k = 1)  annotation(
+    Modelica.Blocks.Continuous.FirstOrder firstOrder(T = Ti, initType = Modelica.Blocks.Types.Init.NoInit, k = 1, y_start = 1)  annotation(
           Placement(visible = true, transformation(origin = {50, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 180)));
   equation
     connect(REF, feedback.u1) annotation(

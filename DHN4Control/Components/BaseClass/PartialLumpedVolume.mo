@@ -24,7 +24,7 @@ partial model PartialLumpedVolume
   // Output
   Modelica.Blocks.Interfaces.RealOutput temperatureMixVolume annotation(
     Placement(visible = true, transformation(origin = {60, 58}, extent = {{-10, -10}, {10, 10}}, rotation = 0), iconTransformation(origin = {83, 61}, extent = {{-17, -17}, {17, 17}}, rotation = 0)));
-  
+
   equation
   // Mass balance
   inlet.m_flow + outlet.m_flow = 0;
