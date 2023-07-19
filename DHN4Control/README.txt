@@ -1,0 +1,1 @@
+Per aprire la libreria DHN4Control, utilizzare il file package.mo presente in questa cartella.
