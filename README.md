@@ -1,8 +1,6 @@
 # DHN4Control
 Library for hydro-thermal simulations of district heating systems. Components' models are simplified to test, tune and analyze control strategies. Thanks to Prof. Francesco Casella for its help in the first set-up of the library and to professor Riccardo Scattolini for its help during the whole development of the research in the multi-energy fields.
-
-# Modelica Version
-The library is developed with Modelica 4.0.0
+The library is developed with Modelica 4.0.0.
 
 # Model approximations
 
